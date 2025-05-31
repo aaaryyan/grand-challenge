@@ -8734,45 +8734,48 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Radar%E2%80%90Chart-Insights">Radar‐Chart Insights<a class="anchor-link" href="#Radar%E2%80%90Chart-Insights">¶</a></h2><p>Each subplot overlays three profiles on the same 7-axis radar:</p>
+<h2 id="Radar%E2%80%90Chart-Insights">Radar‐Chart Insights<a class="anchor-link" href="#Radar%E2%80%90Chart-Insights">¶</a></h2><p>Each subplot overlays three profiles on a shared 7-axis radar chart:</p>
 <ul>
-<li><strong>Green dashed heptagon</strong>: the WHO/EPA “safe” threshold for each pollutant, scaled 0–1</li>
-<li><strong>Blue polygon</strong>: the “bad” country’s normalized mean levels</li>
-<li><strong>Orange polygon</strong>: the “fair” country’s normalized mean levels</li>
+<li><strong>Green dashed heptagon</strong>: WHO/EPA “safe” thresholds for each pollutant</li>
+<li><strong>Blue polygon</strong>: “Bad” country’s normalized mean pollutant levels</li>
+<li><strong>Orange polygon</strong>: “Fair” country’s corresponding profile</li>
 </ul>
-<p>Where a polygon crosses outside the green outline, that pollutant exceeds safe limits.</p>
+<p>Any part of the polygon that extends beyond the green outline indicates a breach of the safe limit.</p>
 <hr/>
 <h3 id="India-vs.-China">India vs. China<a class="anchor-link" href="#India-vs.-China">¶</a></h3><ul>
-<li><strong>Nitrate (NO₃)</strong> is the only axis where both countries fall outside safe limits, but India’s mean exceedance is slightly larger.</li>
-<li><strong>Dissolved O₂</strong>: India dips just above the safe line (indicating lower DO than recommended), whereas China sits exactly at the threshold.</li>
-<li><strong>pH, Contam., Turbidity, Lead, Bacteria</strong>: Both stay well within safe bounds, with nearly identical profiles—indicating these factors aren’t the key differentiators between India and China.</li>
+<li><strong>Dissolved Oxygen (DO)</strong>: India slightly underperforms, dipping below the safe threshold, whereas China meets the standard.</li>
+<li><strong>Turbidity &amp; Bacteria</strong>: Both countries are under the limit, but India’s values are marginally worse.</li>
+<li><strong>pH, Contaminants, Lead, Nitrate</strong>: These remain well within safe bounds for both countries.</li>
 </ul>
-<p><strong>Takeaway:</strong> India’s water quality is driven poorest by low dissolved-oxygen and elevated nitrates, while China meets or barely meets the other criteria.</p>
+<p><strong>Takeaway:</strong> India’s shortfalls are not severe but show mild underperformance in DO and microbial quality, while China consistently aligns with safe thresholds.</p>
 <hr/>
 <h3 id="India-vs.-Brazil">India vs. Brazil<a class="anchor-link" href="#India-vs.-Brazil">¶</a></h3><ul>
-<li><strong>Nitrate and Dissolved O₂</strong> again stand out: India exceeds safe nitrate and dips on DO, Brazil is right at those thresholds.</li>
-<li><strong>Everything else (pH, Contam., Turbidity, Lead, Bacteria)</strong> falls under the green line for both nations, with Brazil typically edging slightly better.</li>
+<li><strong>Dissolved Oxygen</strong>: India again falls slightly short; Brazil meets the standard.</li>
+<li><strong>Bacteria Count</strong>: India shows minor exceedance relative to Brazil.</li>
+<li><strong>All other features</strong> stay within safe boundaries for both countries.</li>
 </ul>
-<p><strong>Takeaway:</strong> Brazil’s water‐quality profile closely mirrors China’s best practices, particularly on DO and nitrates, while India lags on those same two axes.</p>
+<p><strong>Takeaway:</strong> The most relevant differences are in oxygenation and microbial content, with Brazil holding slight but consistent advantages.</p>
 <hr/>
 <h3 id="Mexico-vs.-China">Mexico vs. China<a class="anchor-link" href="#Mexico-vs.-China">¶</a></h3><ul>
-<li><strong>Nitrate</strong> is the lone pollutant above safe limits for Mexico, by a margin similar to India’s.</li>
-<li><strong>Dissolved O₂</strong> also falls just outside the safe zone for Mexico; China again sits at the benchmark.</li>
-<li><strong>Other axes</strong> remain inside the green perimeter for both countries.</li>
+<li><strong>Dissolved Oxygen</strong>: Mexico falls just below safe levels, while China sits near the safe benchmark.</li>
+<li><strong>Bacteria</strong>: A subtle overstep in Mexico compared to China’s compliant value.</li>
+<li><strong>Other features</strong>, including nitrates, fall within the safe zone.</li>
 </ul>
-<p><strong>Takeaway:</strong> Mexico’s primary concerns mirror India’s—<strong>nitrates</strong> and <strong>low dissolved oxygen</strong>—whereas China consistently satisfies those standards.</p>
+<p><strong>Takeaway:</strong> Mexico’s concern centers on biological pollution and slightly lower oxygen levels—issues China has managed more effectively.</p>
 <hr/>
 <h3 id="Mexico-vs.-Brazil">Mexico vs. Brazil<a class="anchor-link" href="#Mexico-vs.-Brazil">¶</a></h3><ul>
-<li><strong>Nitrate</strong> and <strong>DO</strong> are the only axes where Mexico breaches safe limits; Brazil stays on or inside the dashed line.</li>
-<li>All other pollutants (pH, Contaminant, Turbidity, Lead, Bacteria) are compliant for both.</li>
+<li><strong>Dissolved Oxygen</strong>: Again, Mexico underperforms slightly versus Brazil.</li>
+<li><strong>Turbidity</strong>: Slightly elevated for Mexico relative to Brazil, though still close to threshold.</li>
+<li><strong>Other metrics</strong>, including nitrates and pH, remain within limits for both.</li>
 </ul>
-<p><strong>Takeaway:</strong> Brazil and China form a clear “fair” benchmark on nitrates and oxygen, both of which Mexico must prioritize for remediation.</p>
+<p><strong>Takeaway:</strong> Brazil outperforms Mexico in physical water quality indicators like DO and turbidity, reinforcing its benchmark status.</p>
 <hr/>
 <h2 id="Overall-Conclusions">Overall Conclusions<a class="anchor-link" href="#Overall-Conclusions">¶</a></h2><ol>
-<li><strong>Nitrate contamination</strong> and <strong>insufficient dissolved oxygen</strong> are the two universal failure modes for our worst-performing countries (India &amp; Mexico).</li>
-<li><strong>pH, turbidity, lead and bacteria</strong> remain under control even in the “doing bad” nations, suggesting existing treatment methods handle those factors effectively.</li>
-<li><strong>China</strong> and <strong>Brazil</strong> serve as strong models—both consistently meet WHO/EPA thresholds on every axis except (for China) a marginal nitrate overshoot—highlighting where infrastructure or policy interventions should focus.</li>
-<li>Targeting <strong>nitrate reduction</strong> (e.g. improved agricultural runoff management) and <strong>oxygenation strategies</strong> (e.g. aeration systems) offers the highest leverage for India and Mexico to close the gap with best-performing peers.</li>
+<li><strong>Dissolved oxygen levels</strong> are the most consistent underperformer for India and Mexico—indicating potential water stagnation or lack of aeration.</li>
+<li><strong>Bacteria and turbidity</strong> appear as secondary factors where the “bad” countries show slight, but recurrent, deviations.</li>
+<li><strong>Nitrate levels</strong> are not a primary concern in this dataset, with all countries generally falling within acceptable bounds.</li>
+<li><strong>China</strong> and <strong>Brazil</strong> represent reliable benchmarks, especially in maintaining adequate DO and low microbial contamination.</li>
+<li>Intervention strategies for India and Mexico should prioritize <strong>aeration</strong> (to raise DO), and <strong>microbial filtration or chlorination</strong> to tackle biological loads.</li>
 </ol>
 <hr/>
 <h2 id="Proposed-Solution-Framework">Proposed Solution Framework<a class="anchor-link" href="#Proposed-Solution-Framework">¶</a></h2><p>Building on our radar‐chart diagnostics (which pinpointed <strong>nitrate</strong> and <strong>dissolved‐oxygen</strong> as the universal failure modes), we now introduce a two‐pronged modeling approach to answer:</p>
