@@ -7517,7 +7517,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Grand-Challend:-Understanding-Water-Pollution-and-Global-Health-Display">Grand Challend: Understanding Water Pollution and Global Health Display<a class="anchor-link" href="#Grand-Challend:-Understanding-Water-Pollution-and-Global-Health-Display">¶</a></h1><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>Water pollution is a pressing global issue that affects not just ecosystems, but also human health, economic stability, and social equity. Contaminated water sources contribute to the spread of preventable diseases, especially in developing regions, where access to clean water and sanitation remains limited. Despite global efforts, many countries continue to face high rates of waterborne diseases and environmental degradation, while others have managed to control these risks effectively.</p>
+<h1 id="Grand-Challenge:-Understanding-Water-Pollution-and-Global-Health-Display">Grand Challenge: Understanding Water Pollution and Global Health Display<a class="anchor-link" href="#Grand-Challenge:-Understanding-Water-Pollution-and-Global-Health-Display">¶</a></h1><h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>Water pollution is a pressing global issue that affects not just ecosystems, but also human health, economic stability, and social equity. Contaminated water sources contribute to the spread of preventable diseases, especially in developing regions, where access to clean water and sanitation remains limited. Despite global efforts, many countries continue to face high rates of waterborne diseases and environmental degradation, while others have managed to control these risks effectively.</p>
 <p>This project aims to explore <strong>why some countries struggle with water pollution impacts more than others</strong> by analyzing a comprehensive dataset of water quality indicators, health outcomes, and socioeconomic infrastructure. Using statistical modeling and visual analytics, we seek to uncover the <strong>key relationships between pollution, disease rates, and national resilience factors</strong> like GDP, healthcare access, and sanitation coverage.</p>
 <h2 id="Project-Goals">Project Goals<a class="anchor-link" href="#Project-Goals">¶</a></h2><ul>
 <li>Quantify the level of water contamination across countries based on WHO/EPA thresholds.</li>
@@ -7582,7 +7582,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Importing the libraries</span>
@@ -7661,10 +7661,7 @@ a.anchor-link {
 <th>Dissolved Oxygen (mg/L)</th>
 <th>Nitrate Level (mg/L)</th>
 <th>Lead Concentration (µg/L)</th>
-<th>Bacteria Count (CFU/mL)</th>
-<th>Water Treatment Method</th>
-<th>Access to Clean Water (% of Population)</th>
-<th>Diarrheal Cases per 100,000 people</th>
+<th>...</th>
 <th>Cholera Cases per 100,000 people</th>
 <th>Typhoid Cases per 100,000 people</th>
 <th>Infant Mortality Rate (per 1,000 live births)</th>
@@ -7690,10 +7687,7 @@ a.anchor-link {
 <td>4.28</td>
 <td>8.28</td>
 <td>7.89</td>
-<td>3344</td>
-<td>Filtration</td>
-<td>33.60</td>
-<td>472</td>
+<td>...</td>
 <td>33</td>
 <td>44</td>
 <td>76.16</td>
@@ -7717,10 +7711,7 @@ a.anchor-link {
 <td>3.86</td>
 <td>15.74</td>
 <td>14.68</td>
-<td>2122</td>
-<td>Boiling</td>
-<td>89.54</td>
-<td>122</td>
+<td>...</td>
 <td>27</td>
 <td>8</td>
 <td>77.30</td>
@@ -7744,10 +7735,7 @@ a.anchor-link {
 <td>3.42</td>
 <td>36.67</td>
 <td>9.96</td>
-<td>2330</td>
-<td>NaN</td>
-<td>35.29</td>
-<td>274</td>
+<td>...</td>
 <td>39</td>
 <td>50</td>
 <td>48.45</td>
@@ -7771,10 +7759,7 @@ a.anchor-link {
 <td>3.12</td>
 <td>36.92</td>
 <td>6.77</td>
-<td>3779</td>
-<td>Boiling</td>
-<td>57.53</td>
-<td>3</td>
+<td>...</td>
 <td>33</td>
 <td>13</td>
 <td>95.66</td>
@@ -7798,10 +7783,7 @@ a.anchor-link {
 <td>9.15</td>
 <td>49.35</td>
 <td>12.51</td>
-<td>4182</td>
-<td>Filtration</td>
-<td>36.60</td>
-<td>466</td>
+<td>...</td>
 <td>31</td>
 <td>68</td>
 <td>58.78</td>
@@ -7815,6 +7797,7 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
+<p>5 rows × 24 columns</p>
 </div>
 </div>
 </div>
@@ -8087,12 +8070,11 @@ Summary Statistics:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Cleaning the dataset</span>
 <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()[</span><span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
-<span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Country'</span><span class="p">)[</span><span class="s1">'GDP per Capita (USD)'</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8103,161 +8085,9 @@ Summary Statistics:
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[169]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>count</th>
-<th>mean</th>
-<th>std</th>
-<th>min</th>
-<th>25%</th>
-<th>50%</th>
-<th>75%</th>
-<th>max</th>
-</tr>
-<tr>
-<th>Country</th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>Bangladesh</th>
-<td>291.0</td>
-<td>48973.381443</td>
-<td>28720.478774</td>
-<td>1251.0</td>
-<td>22648.5</td>
-<td>51393.0</td>
-<td>72959.0</td>
-<td>99325.0</td>
-</tr>
-<tr>
-<th>Brazil</th>
-<td>291.0</td>
-<td>50334.168385</td>
-<td>28797.236752</td>
-<td>537.0</td>
-<td>25872.5</td>
-<td>49940.0</td>
-<td>77693.0</td>
-<td>99937.0</td>
-</tr>
-<tr>
-<th>China</th>
-<td>311.0</td>
-<td>50368.745981</td>
-<td>28820.394414</td>
-<td>852.0</td>
-<td>25017.5</td>
-<td>49901.0</td>
-<td>73430.5</td>
-<td>99912.0</td>
-</tr>
-<tr>
-<th>Ethiopia</th>
-<td>293.0</td>
-<td>51939.931741</td>
-<td>27436.105453</td>
-<td>769.0</td>
-<td>29094.0</td>
-<td>51641.0</td>
-<td>76099.0</td>
-<td>99358.0</td>
-</tr>
-<tr>
-<th>India</th>
-<td>290.0</td>
-<td>47883.120690</td>
-<td>28926.936157</td>
-<td>572.0</td>
-<td>23230.0</td>
-<td>47071.5</td>
-<td>71337.5</td>
-<td>99861.0</td>
-</tr>
-<tr>
-<th>Indonesia</th>
-<td>304.0</td>
-<td>51554.036184</td>
-<td>28315.278107</td>
-<td>876.0</td>
-<td>26911.5</td>
-<td>50968.5</td>
-<td>77056.5</td>
-<td>99947.0</td>
-</tr>
-<tr>
-<th>Mexico</th>
-<td>288.0</td>
-<td>49210.819444</td>
-<td>29048.476822</td>
-<td>1278.0</td>
-<td>23382.5</td>
-<td>48144.0</td>
-<td>72235.0</td>
-<td>99948.0</td>
-</tr>
-<tr>
-<th>Nigeria</th>
-<td>315.0</td>
-<td>49005.730159</td>
-<td>27603.313975</td>
-<td>1123.0</td>
-<td>25155.0</td>
-<td>48747.0</td>
-<td>71777.0</td>
-<td>99587.0</td>
-</tr>
-<tr>
-<th>Pakistan</th>
-<td>298.0</td>
-<td>51556.976510</td>
-<td>28401.196256</td>
-<td>1327.0</td>
-<td>26587.5</td>
-<td>50839.5</td>
-<td>76708.5</td>
-<td>99289.0</td>
-</tr>
-<tr>
-<th>USA</th>
-<td>319.0</td>
-<td>49514.047022</td>
-<td>29952.854905</td>
-<td>521.0</td>
-<td>22596.5</td>
-<td>48958.0</td>
-<td>76819.5</td>
-<td>99444.0</td>
-</tr>
-</tbody>
-</table>
-</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>Series([], dtype: int64)</pre>
 </div>
 </div>
 </div>
@@ -8278,7 +8108,7 @@ Summary Statistics:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fill missing values with 'Unknown'</span>
@@ -8401,7 +8231,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [171]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Distance-based penalty functions</span>
@@ -8639,7 +8469,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Defining the pairs of countries and features to compare</span>
@@ -8664,14 +8494,15 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
     <span class="s1">'Lead Concentration (µg/L)'</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
     <span class="s1">'Bacteria Count (CFU/mL)'</span><span class="p">:</span> <span class="mi">0</span>
 <span class="p">}</span>
-<span class="c1"># Normalize the safe values</span>
-<span class="n">safe_norm</span> <span class="o">=</span> <span class="p">[</span> <span class="n">safe_vals</span><span class="p">[</span><span class="n">f</span><span class="p">]</span> <span class="o">/</span> <span class="n">max_vals</span><span class="p">[</span><span class="n">f</span><span class="p">]</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">features</span> <span class="p">]</span>
-<span class="n">safe_norm</span> <span class="o">+=</span> <span class="n">safe_norm</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="c1"># Compute global maxima and per-country means</span>
 <span class="n">max_vals</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
 <span class="n">means</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Country'</span><span class="p">)[</span><span class="n">features</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">normed</span> <span class="o">=</span> <span class="n">means</span><span class="o">.</span><span class="n">divide</span><span class="p">(</span><span class="n">max_vals</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Normalize the safe values</span>
+<span class="n">safe_norm</span> <span class="o">=</span> <span class="p">[</span> <span class="n">safe_vals</span><span class="p">[</span><span class="n">f</span><span class="p">]</span> <span class="o">/</span> <span class="n">max_vals</span><span class="p">[</span><span class="n">f</span><span class="p">]</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">features</span> <span class="p">]</span>
+<span class="n">safe_norm</span> <span class="o">+=</span> <span class="n">safe_norm</span><span class="p">[:</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="c1"># Preparing 7 axises</span>
 <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
@@ -8837,7 +8668,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Features to aggregate at the country level</span>
@@ -9099,7 +8930,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [174]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Train/Test split</span>
@@ -9135,7 +8966,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Feature Importances</span>
@@ -9193,7 +9024,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Reinitializing the features</span>
@@ -9293,7 +9124,7 @@ Apply Min–Max scaling to map the raw score into a <strong>0–100</strong> ran
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
- Recommended peers:
+ Recommended peers for India:
 </pre>
 </div>
 </div>
@@ -9530,7 +9361,7 @@ We clustered countries based on their full profile (pollution + infrastructure) 
 </ul>
 <p>This gave interpretable suggestions like:</p>
 <blockquote>
-<p><em>India should reduce its chemical contamination penalty and invest in sanitation infrastructure to close the most impactful gaps compared to Brazil.</em></p>
+<p><em>India should work on it's GDP per capita and invest in sanitation infrastructure to close the most impactful gaps compared to Bangladesh.</em></p>
 </blockquote>
 </li>
 </ol>
